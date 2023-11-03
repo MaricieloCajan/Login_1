@@ -1,0 +1,134 @@
+/*.container {
+    width: 400px; 
+    margin: 250px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+  } 
+  
+  form {
+   display: flex;
+    flex-direction: column; 
+  }*/
+  
+  .form-group {
+    margin-bottom: 10px;
+    margin: 10px;
+    width: 100px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px auto;
+    width: 270px;
+  }
+  
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: #121412;
+    color: white;
+    cursor: pointer;
+    margin: 15px;
+    width: 320px;
+  }
+  
+  button:hover {
+    background-color: #5db3be;
+  }
+  h1{
+    text-align: center;
+  }
+  img{
+    width: 120px; /* Ancho de la imagen reducido a 200 píxeles */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+  }
+
+  #app {
+    color: #374957;
+    height: 92vh;
+    width: 99vw;
+  }
+  @media only screen and (min-width: 992px) {
+    #app {
+        display:flex;
+    }
+  }
+  #app .art-wrapper {
+    background-color: #f8fafb;
+    height: 107%;
+    overflow: hidden;
+    position: relative;
+  }
+  #app .art-wrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(75%);
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    width: 100%;
+  }
+  @media only screen and (min-width: 992px) {
+    #app .art-wrapper {
+        width:calc(100% - 480px);
+    }
+  }
+  #app .content-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+  }
+  @media only screen and (min-width: 768px) {
+    #app .content-wrapper {
+        padding-left:40px;
+        padding-right: 40px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    #app .content-wrapper {
+        padding-left:80px;
+        padding-right: 80px
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    #app .content-wrapper {
+        width:480px
+    }
+  }
+  #app .content-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15px;
+    position: relative;
+    width: 300px;
+  }
+  #app .content-wrapper>* {
+    width: 100%;
+    
+  }
+  #app .content-wrapper>*:not(.top-bar):not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
